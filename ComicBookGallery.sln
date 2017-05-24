@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicBookGallery", "ComicBookGallery\ComicBookGallery.csproj", "{D625C0CC-90B1-49EA-91D0-84874224511D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicBookGallery.Tests", "ComicBookGallery.Tests\ComicBookGallery.Tests.csproj", "{0B9D296E-7F3B-4944-8E24-CE60A47C799D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D625C0CC-90B1-49EA-91D0-84874224511D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D625C0CC-90B1-49EA-91D0-84874224511D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D625C0CC-90B1-49EA-91D0-84874224511D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D625C0CC-90B1-49EA-91D0-84874224511D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B9D296E-7F3B-4944-8E24-CE60A47C799D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B9D296E-7F3B-4944-8E24-CE60A47C799D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B9D296E-7F3B-4944-8E24-CE60A47C799D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B9D296E-7F3B-4944-8E24-CE60A47C799D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
