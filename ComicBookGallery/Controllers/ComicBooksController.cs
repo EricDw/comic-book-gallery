@@ -13,9 +13,9 @@ namespace ComicBookGallery.Controllers
         {
             ActionResult _result;
 
-            var comicBook = new ComicBook()
+            var ComicBook = new ComicBook()
             {
-                SeriesTitle = "The Amazing Spiderman!",
+                SeriesTitle = "The Amazing Spider-Man",
                 IssueNumber = 700,
                 DescriptionHtml = "<p> Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>",
                 Artists = new Artist[]
@@ -29,7 +29,7 @@ namespace ComicBookGallery.Controllers
                 }
             };
 
-            _result = View(comicBook);
+            _result = View(ComicBook);
 
             return _result;
         }
