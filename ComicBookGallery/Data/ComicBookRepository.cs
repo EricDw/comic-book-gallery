@@ -1,4 +1,5 @@
 ﻿using ComicBookGallery.Models;
+using System.Linq;
 
 namespace ComicBookGallery.Data
 {
@@ -19,9 +20,9 @@ namespace ComicBookGallery.Data
                     new Artist() { Name = "Humberto Ramos",   Role = "Pencils" },
                     new Artist() { Name = "Victor Olazaba",   Role = "Inks" },
                     new Artist() { Name = "Edgar Delgado",    Role = "Colors" },
-                    new Artist() { Name = "Chris Eliopoulos", Role = "Letters" },
-
-                }
+                    new Artist() { Name = "Chris Eliopoulos", Role = "Letters" }
+                },
+                Favorite = false
             },
             new ComicBook()
             {
@@ -64,19 +65,8 @@ namespace ComicBookGallery.Data
 
         public ComicBook GetComicBook(int Id)
         {
-            ComicBook comicBookToReturn = null;
+            return _comicBooks.First(c => c.Id == Id);
 
-            foreach (var comicBook in _comicBooks)
-            {
-                if (comicBook.Id == Id)
-                {
-                    comicBookToReturn = comicBook;
-
-                    break;
-                }
-            }
-
-            return comicBookToReturn;
         }
 
     }
