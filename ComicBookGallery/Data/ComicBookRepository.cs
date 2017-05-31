@@ -64,6 +64,6 @@ namespace ComicBookGallery.Data
             return _comicBooks;
         }
 
-        public Func<int, ComicBook> GetComicBook = (comicBookId) => _comicBooks.First(comicBook => c.Id == comicBookId);
+        public Func<int, ComicBook> GetComicBook = (comicBookId) => _comicBooks.First(comicBook => comicBook.Id == comicBookId);
     }
 }
