@@ -1,4 +1,5 @@
 ﻿using ComicBookGallery.Models;
+using System;
 using System.Linq;
 
 namespace ComicBookGallery.Data
@@ -63,11 +64,6 @@ namespace ComicBookGallery.Data
             return _comicBooks;
         }
 
-        public ComicBook GetComicBook(int Id)
-        {
-            return _comicBooks.First(c => c.Id == Id);
-
-        }
-
+        public Func<int, ComicBook> GetComicBook = (comicBookId) => _comicBooks.First(comicBook => c.Id == comicBookId);
     }
 }
